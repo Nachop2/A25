@@ -1,14 +1,13 @@
 models:
   Country:
-    name: string 
-
-  User:
-    name: string 
-    email: string
-    country_id: id
+    name: string
+    relationships:
+      hasMany: User
   Post:
     name: string
     user_id: id
+    relationships:
+        belongsTo: User
 
 controllers:
   # ...
