@@ -1,0 +1,18 @@
+models:
+  Country:
+    name: string 
+
+  User:
+    name: string 
+    email: string
+    country_id: id
+  Post:
+    name: string
+    user_id: id
+
+controllers:
+  # ...
+ 
+
+
+seeders: Country, User, Post
